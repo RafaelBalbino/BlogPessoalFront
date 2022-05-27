@@ -1,0 +1,7 @@
+#img-bg{
+    background-image: url('../../assets/img/fundoCadastrar.png');
+    min-height: 627px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
