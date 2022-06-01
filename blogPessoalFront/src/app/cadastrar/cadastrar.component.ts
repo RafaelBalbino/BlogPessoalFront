@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../model/User';
+import { UserLogin } from '../model/UserLogin';
 import { AuthService } from '../service/auth.service';
 
 @Component({
@@ -12,12 +13,14 @@ export class CadastrarComponent implements OnInit {
   user: User = new User
   confirmarSenha: string
   tipoUsuario: string
+  userLogin: UserLogin = new UserLogin
 
   constructor(
     private authService: AuthService
   ) { }
 
   ngOnInit() {
+    window.scroll(0,0)
   }
 
   // Confirma a senha, comparando uma com a outra no formulário, recendo o valor do 'event'
