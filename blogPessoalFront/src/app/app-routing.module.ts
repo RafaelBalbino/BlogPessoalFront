@@ -5,8 +5,8 @@ import { EntrarComponent } from './entrar/entrar.component';
 
 const routes: Routes = [
 
-  { /* Rota fixa, redirecionando para 'entrar' e dar um varredura, 
-     * checar se a rota realmente existe. */
+  { /* Rota fixa quando abre o site, redirecionando para 'entrar' e dar 
+     * uma varredura, checar se a rota realmente existe. */
     path: '', redirectTo: 'entrar', pathMatch: 'full'
   },
 
