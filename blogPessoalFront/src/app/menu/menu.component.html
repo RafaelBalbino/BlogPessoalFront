@@ -7,12 +7,12 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto d-flex align-items-center">
         <li class="nav-item active">
-          <img src="assets/img/Eu.png" alt="Imagem do Usuário" width="50px" height="50px" 
+          <img src="{{foto}}" alt="Foto do Usuário" width="50px" height="50px" 
            class="img-fluid rounded-circle">
         </li>
         <li class="nav-item pl-3" style="margin-top:10px">
           <p class="mg-0 font-weight-bold fontSize17" style="color:darkorange">
-            Nome do Usuário
+            Olá, {{nome}}
           </p>
         </li>
         <li class="nav-item pl-3">
@@ -24,7 +24,7 @@
         </li>
       </ul>
       <ul class="navbar-nav ml-auto d-flex align-items-center">
-            <a class="mg-0 font-weight-bold fontSize17" style="color:darkorange">
+            <a (click)="sair()" class="mg-0 font-weight-bold fontSize17" style="color:darkorange">
              Sair <i class="fa-solid fa-right-from-bracket"></i>
             </a>
       </ul>
