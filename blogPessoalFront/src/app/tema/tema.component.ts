@@ -38,13 +38,11 @@ export class TemaComponent implements OnInit {
   // Subscribe transforma a informação pra Json, pro objeto resp aí o objeto 'this.tema'
   // vira esse 'resp' pra aí sim podermos ter o dado no banco de dados.
   cadastrar() {
-    this.temaService.postTema(this.tema).subscribe({
-      next: (resp: Tema)=>{
+    this.temaService.postTema(this.tema).subscribe((resp: Tema)=>{
       this.tema = resp
       alert('Tema cadastrado com sucesso!') // Mensagem pro usuário
       this.findAllTemas()
       this.tema = new Tema // Zera o campo após cadastrar um tema
-      },
-    });
+      })
+    }
   }
-}
