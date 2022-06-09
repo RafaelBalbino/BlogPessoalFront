@@ -42,6 +42,7 @@ export class InicioComponent implements OnInit {
 
     this.getAllTemas()
     this.getAllPostagens()
+    this.auth.refreshToken()
   }
 
   getAllTemas(){

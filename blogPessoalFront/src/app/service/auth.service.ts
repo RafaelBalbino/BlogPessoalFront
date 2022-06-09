@@ -14,6 +14,16 @@ export class AuthService {
     private http: HttpClient
   ) { }
 
+  token = {
+    headers: new HttpHeaders().set('Authorization', environment.token)
+  };
+
+  refreshToken() {
+    this.token = {
+      headers: new HttpHeaders().set('Authorization', environment.token)
+    }
+  };
+
   entrar(userLogin: UserLogin): Observable <UserLogin>{
     return this.http.post <UserLogin> ('http://localhost:8080/usuario/logar', userLogin)
   }
@@ -23,8 +33,7 @@ export class AuthService {
   }
 
   getByIdUser(id: number): Observable <User> {
-    return this.http.get <User> (`http://localhost:8080/usuario/${id}`,
-    {headers: new HttpHeaders().set('Authorization', environment.token)})
+    return this.http.get <User> (`http://localhost:8080/usuario/${id}`, this.token)
   }
 
   logado() {
@@ -33,7 +42,6 @@ export class AuthService {
     if(environment.token != '') {
       ok = true
     }
-
     return ok
   }
 }

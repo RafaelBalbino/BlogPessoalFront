@@ -7,13 +7,13 @@
     </div>
   </div>
 
-  <div class="row d-flex justify-content-center">
+  <div class="row d-flex justify-content-center text-center">
     <div class="col-md-12">
       <h4 class="m-1">Você tem certeza que quer apagar essa postagem?</h4>
     </div>
   </div>
 
-  <div class="row">
+  <div class="row d-flex justify-content-center text-center">
     <div class="col-md-12">
       <div class="card-columns" *ngFor="let tema of listaTemas">
         <div class="card text-center" *ngFor="let item of tema.postagem">
@@ -32,7 +32,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row d-flex justify-content-center text-center">
     <div class="col-md-12">
       <button class="btn btn-danger mr-4" routerLink="/inicio">Não</button>
       <button class="btn btn-success" (click)="apagar()">Sim</button>

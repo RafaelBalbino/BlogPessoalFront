@@ -16,6 +16,8 @@ export class PostagemDeleteComponent implements OnInit {
   postagem: Postagem = new Postagem()
   idPost: number
 
+  listaTemas: Tema[]
+  
   constructor(
     private router: Router,
     private route: ActivatedRoute,
