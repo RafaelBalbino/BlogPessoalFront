@@ -22,7 +22,7 @@ export class TemaService {
   }
 
   getAllTema(): Observable <Tema[]> {
-    return this.http.get<Tema[]>('https://projetoblogpessoalrafael.herokuapp.com', this.token)
+    return this.http.get<Tema[]>('https://projetoblogpessoalrafael.herokuapp.com/tema', this.token)
   }
 
   getByIdTema(id: number): Observable <Tema>{
