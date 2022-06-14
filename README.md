@@ -16,6 +16,14 @@
 
 <hr>
 
+<div align="center">
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/09d68414-2d46-46b9-ba9e-4132d56e94cc/deploy-status)](https://app.netlify.com/sites/blogpessoalrafael/deploys?main=)
+
+</div>
+
+<hr>
+
 # BlogPessoalFront
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
